@@ -45,16 +45,31 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class = "container" id = "start1-form">
-      <h1 class = "main-title">Start a Car Meet</h1>
+    <div class = "container" id = "start2-form">
+      <h1 class = "main-title">Say Hello to your new car meet</h1>
       <div class = "col-md-6 col-md-offset-3">
         <p>Start by entering your zip code below so other car enthusiasts can find you.</p>
         <form action = "start2.html">
           <div class = "form-group">
-            <input type = "text" name = "zipcode" placeholder = "Zip Code">
+            <input type = "file" name = "meet_avatar" placeholder = "Zip Code">
           </div>
           <div class = "form-group">
-            <input type = "submit" name = "zipcode" value = "Next">
+            <input type = "text" name = "meet_title" placeholder = "Title">
+          </div>
+          <div class = "form-group">
+            <textarea type = "submit" name = "meet_description" value = "Next"></textarea>
+          </div>
+          <p>Do you want to set rules for your car meet?</p>
+          <div id = "rule-buttons">
+            <div class = "col-md-6">
+              <a href="meet-confirmation.html">No</a>
+            </div>
+            <div class = "col-md-6">
+              <a href="#">Yes</a>
+            </div>
+          </div>
+          <div class = "form-group">
+            <input type = "submit" style = "display: none;" value = "Next">
           </div>
         </form>
       </div>
