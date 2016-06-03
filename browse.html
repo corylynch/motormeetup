@@ -45,28 +45,55 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class = "container">
-      <div class = "col-md-8 col-md-offset-2" id = "meet-confirmation">
-        <h1>Woo! You created a car meet.</h1>
-        <div id = "meet-preview">
-          <div class = "col-md-4">
-            <div class = "crop">
-              <img src = "images/example.jpg">
-            </div>
-          </div>
-          <div class = "col-md-8">
-            <h2>Orlando Car Meet</h2>
-            <p id = "location">32825</p>
-            <p id = "meet-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ipsum ut leo fringilla lobortis id a sapien. Sed hendrerit......</p>
-          </div>
-        </div>
+    <div id = "browse-main">
+      <div id = "browse-overlay">
+
       </div>
-      <div class = "row">
-        <a href = "meetprofile.html" id = "preview-meet" class = "col-md-4 col-md-offset-4">Check it out</a>
+      <div class = "container" id = "main-form">
+        <h1>Find a meet</h1>
+        <form action = "browse.html">
+          <div class = "form-group col-md-4 col-md-offset-4">
+            <input type = "text" name = "zip" placeholder = "Zip Code">
+          </div>
+          <div class = "form-group col-md-4 col-md-offset-4">
+            <input type = "submit" value = "Go">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class = "container" id = "filter">
+      <h2>Showing car meets within <form action = "browse.html"><input type = "text" name = "zipcode" value = "get zipcode from url php" style = "display: none;"><select id = "select-distance" onchange="this.form.submit()" name = "distance"><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select><input type = "submit" style = "display: none;"></form> miles 32825</h2>
+    </div>
+    <div id = "browse-results">
+      <div class = "container">
+        <a href="meetprofile.html">
+          <div class = "col-md-3 browse-box">
+            <img src="images/example.jpg">
+            <p>Waterford Meet</p>
+          </div>
+        </a>
+        <a href="meetprofile.html">
+          <div class = "col-md-3 browse-box">
+            <img src="images/example.jpg">
+            <p>Waterford Meet</p>
+          </div>
+        </a>
+        <a href="meetprofile.html">
+          <div class = "col-md-3 browse-box">
+            <img src="images/example.jpg">
+            <p>Waterford Meet</p>
+          </div>
+        </a>
+        <a href="meetprofile.html">
+          <div class = "col-md-3 browse-box">
+            <img src="images/example.jpg">
+            <p>Waterford Meet</p>
+          </div>
+        </a>
       </div>
     </div>
 
-    <footer style = "margin-top: 250px;">
+    <footer>
       <div class = "container">
         <div class = "col-md-3">
         <p>2016 Motormeetup.com</p>          

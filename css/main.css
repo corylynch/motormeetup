@@ -16,6 +16,10 @@ body, h1, h2, h3, p, a{
 	font-style: italic;
 }
 
+button:focus, input:focus{
+	outline: none;
+}
+
 /* ------------- Nav Bar ------------- */
 
 .navbar{
@@ -170,6 +174,30 @@ footer a{
 	width: 190px;
 }
 
+/* ------------- Start a Meet ------------- */
+
+.NFI-wrapper{
+  width: 100%;
+}
+.NFI-button {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #333333;
+
+   
+}
+
+.NFI-button:hover{
+
+   
+}
+
+.NFI-filename {
+	display: block;
+	float: left;
+   
+}
+
 #startameet{
 
 }
@@ -192,8 +220,6 @@ footer a{
 	text-align: center;
 }
 
-/* ------------- Start a Meet ------------- */
-
 #start1-form h1, #start2-form h1{
 	background-color: #eb1c24;
 	text-align: center;
@@ -214,18 +240,22 @@ footer a{
 
 #start2-form input[type="text"]{
 	height: 40px;
+}
+
+#title{
 	width: 100%;
+	padding: 5px;
 }
 
 
 #start2-form textarea{
 	width: 100%;
 	height: 100px;
+	padding: 5px;
 }
 
-#start2-form input[type="file"]{
-	width: 200px;
-	margin: 30px auto 10px;
+#rule-buttons{
+	margin-bottom: 20px;
 }
 
 #rule-buttons a{
@@ -235,6 +265,7 @@ footer a{
 	text-decoration: none;
 	font-size: 1.25em;
 	display: block;
+	margin: 20px 0;
 	width: 100%;
 }
 
@@ -244,6 +275,36 @@ footer a{
 
 #rule-buttons div:nth-child(2) a{
 	background-color: #1485CC;
+}
+
+#rules-input{
+	display: none;
+}
+
+#rules-container .rule input{
+	clear: both;
+	margin: 20px 0;
+	display: block;
+	padding: 5px;
+	width: 250px;
+}
+
+#rules-input button{
+	border: 3px solid #262626;
+	color: #262626;
+	clear: both;
+	display: block;
+	padding: 10px;
+	font-size: 1.25em;
+	background-color: #ffffff;
+	font-style: italic;
+	transition: border .2s, background-color .2s, color .2s;
+}
+
+#rules-input button:hover{
+	border: 3px solid #ffffff;
+	background-color: #333333;
+	color: #ffffff;
 }
 
 #start1-form input[type="submit"], #start2-form input[type="submit"]{
@@ -258,6 +319,15 @@ footer a{
 	color: #ffffff;
 	font-size: 1.25em;
 }
+
+#start2-form #submit{
+	float: right;
+	display: none;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/* ------------- Meet Confirmation ------------- */
 
 #meet-preview img{
 	width: 100%;
@@ -283,6 +353,211 @@ footer a{
 	font-size: 1.25em;
 	display: block;
 	padding: 10px;
+	text-align: center;
+	text-decoration: none;
 }
+
+/* ------------- Browse ------------- */
+
+#browse-main{
+	background: url(../images/browse-background.jpeg) center center no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+	position: relative;
+}
+
+#browse-main #browse-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 0;
+}
+
+#browse-main #main-form{
+	position: relative;
+}
+
+#main-form h1{
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#main-form input{
+	width: 100%;
+	padding: 5px;
+	font-size: 1.25em;
+}
+
+#main-form input[type = "submit"]{
+	background-color: #1485CC;
+	border: none;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+#filter h2{
+	text-align: center;
+	margin: 20px;
+}
+
+.browse-box img{
+	width: 100%;
+	display: block;
+}
+
+.browse-box p{
+	padding: 5px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	font-size: 1.25em;
+	background-color: rgba(255,255,255,.7);
+}
+
+#filter form{
+	display: inline;
+}
+
+#select-distance{
+	background-color: #333333;
+	color: #ffffff;
+	font-size: .8em;
+}
+
+/* ------------- Meet Profile ------------- */
+
+#meet-info{
+	margin-top: 20px;
+}
+
+#meet-crop{
+	height: 200px;
+	overflow: hidden;
+}
+
+#meet-crop img{
+	width: 100%;
+	display: block;
+}
+
+#join button{
+	background-color: #1485CC;
+	border: none;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+#rules{
+	overflow: auto;
+	margin: 20px 0;
+	padding: 0;
+	background-color: #e8e8e8;
+}
+
+#rules p{
+	text-align: center;
+	padding: 5px;
+	margin: 0;
+	font-size: 1.25em;
+}
+
+#members-container h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.member-box img{
+	width: 100%;
+}
+
+.member-box p{
+	text-align: center;
+	font-size: 1.25em;
+}
+
+/* ------------- User Profile ------------- */
+
+#user-info{
+	margin-top: 20px;
+}
+
+#user-info img{
+	width: 100%;
+}
+
+#user-info #name{
+	margin-top: 40px;
+}
+
+#user-info #bio{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#joined-meets h2{
+	text-align: center;
+	margin: 20px;
+	font-weight: 600;
+
+}
+
+/* ------------- Settings ------------- */
+
+#settings-title{
+	background-color: #262626;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#settings input[type = "text"], #settings textarea{
+	padding: 10px;
+}
+
+#settings .input input, #settings textarea{
+	margin: 10px;
+}
+
+#settings input[type="submit"]{
+	padding: 10px 0;
+	border: none;
+	font-style: italic;
+	background-color: #1485CC;
+	color: #ffffff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+#settings .NFI-wrapper{
+  width: 100%;
+}
+#settings .NFI-button {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #333333;
+
+   
+}
+
+#settings .NFI-filename {
+	display: block;
+	float: left;
+   	height: 40px;
+}
+
+
 
 

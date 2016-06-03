@@ -48,50 +48,95 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class = "container" id = "start2-form">
-      <h1 class = "main-title">Say Hello to your new car meet</h1>
-      <div class = "col-md-6 col-md-offset-3">
-        <p>Start by entering your zip code below so other car enthusiasts can find you.</p>
-        <form action = "meet-confirmation.html">
-            <input type = "file" name = "meet_avatar">
-            <script type="text/javascript">
-                $(document).ready(function(){
-                  $("input[type=file]").nicefileinput({
-                    label: "Upload Meet Profile Image"
-                  });
-                });
-            </script>
-          <div class = "form-group">
-            <input type = "text" name = "meet_title" placeholder = "Title" id = "title">
+    <div class = "container">
+      <div id = "meet-info" class = "col-md-8 col-md-offset-2">
+        <div id = "join" class = "col-md-6">
+          <div id = "meet-crop">
+            <img src="images/example.jpg">
           </div>
-          <div class = "form-group">
-            <textarea name = "meet_description" placeholder = "Description"></textarea>
-          </div>
-          <p>Do you want to set rules for your car meet?</p>
-          <div id = "rule-buttons" class = "form-group">
-            <div class = "col-md-6">
-              <a href="meet-confirmation.html">No</a>
-            </div>
-            <div class = "col-md-6">
-              <a href="#" id = "yes">Yes</a>
-            </div>
-          </div>
-          <div id = "rules-input">
-            <div id = "rules-container" class = "form-group">
-              <div class = "rule">
-                <input type = "text" name = "rule" placeholder = "Rule 1">
-              </div>
-            </div>
-            <div class = "form-group">
-              <button type = "button" id = "add-rule" class = "col-md-4">New Rule +</button>
-            </div>
-          </div>
-          <div class = "col-md-12">
-            <input type = "submit" id = "submit" value = "Submit">
-          </div>
-        </form>
+          <button class = "col-md-12" id = "join-button">Join Meet</button>
+          <script type="text/javascript">
+
+            $("#join-button").click(function(){
+              $(this).css({
+                "background-color" : "#e8e8e8",
+                "color" : "#262626"
+              });
+              $(this).html("Joined")
+            });
+
+          </script>
+        </div>
+        <div class = "col-md-6" id = "side-info">
+          <h1>Orlando Car Meet</h1>
+          <p id = "location">Orlando</p>
+          <p id = "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et euismod tortor. Donec eu lobortis libero. Aliquam vel nibh tempor, mattis lorem nec, faucibus mauris. </p>
+        </div>
       </div>
     </div>
+    <div id = "rules" class = "col-md-12">
+      <div class = "container">
+        <p class = "col-md-3">No Burnouts</p>
+        <p class = "col-md-3">No Loud Music</p>
+        <p class = "col-md-3">No Drugs</p>
+        <p class = "col-md-3">No Revving</p>
+      </div>
+    </div>
+
+    <div id = "members-container" class = "container">
+      <h1><span id = "members-amount">8</span> Members</h1>
+      <div id = "members">
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+        <div class = "col-md-2 member-box">
+          <a href="userprofile.html">
+            <img src="images/me.png">
+            <p>Cory Lynch</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
 
     <footer>
       <div class = "container">
@@ -116,9 +161,8 @@
         </div>
       </div>
     </footer>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.nicefileinput.js"></script>
-    <script src="js/add_rule.js"></script>
   </body>
 </html>
